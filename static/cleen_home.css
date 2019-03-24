@@ -1,0 +1,510 @@
+
+#main_picture{
+  width: 100%;
+  height: 550px;
+  background-color: hsl(30, 25%, 97%);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+.nav-item>a{
+  text-decoration: none;
+  color:#777777;
+}
+.nav-item>a:hover {
+  text-decoration: none;
+  text-decoration-line: none;
+
+}
+.pic_content{
+  width: 25%;
+  height: 400px;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 50px;
+}
+.small_content_cleen{
+  position: absolute;
+  width: 50%;
+  height:60px;
+  background-color:#e5b11b ;
+  bottom:-35px;
+  left:85px;
+  padding-top:15px;
+  padding-right:10px;
+  padding-left:45px;
+  color: 	white;
+  
+
+}
+
+.small_content_cleen:hover{
+  background-color: white;
+  color: #e5b11b;
+}
+.about_cleen{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  position: relative;
+  background-color:black;
+}
+
+
+#myVideo {
+  z-index: 2;
+  object-fit: fill;
+  opacity: 0.5;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* .animated{
+  background-image: url('https://www.copunesahipcik.org/wp-content/uploads/2015/01/n3.jpg') repeat-x;
+  animation:animate-background linear 15s infinite
+
+}
+@keyframes animate-background{
+  from {background-position:0px;}
+  to{background-position:-300px;}
+} */
+.all_text{
+  z-index: 3;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text1{
+  margin-top:10px;
+  display: inline-block; 
+  width: 500px;
+  height: 250px;
+  padding: 5px;
+  position: relative;
+  align-self: center;
+  color:white;
+  font-weight: 100;
+
+  
+}
+.text2{
+  display: flex;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius:20px;
+  border: 1px white solid
+}
+.text2:hover{
+  background-color: white;
+  color: #e5b11b;
+}
+
+.all_text > div:nth-child(1) {
+  text-transform: uppercase;
+  color:white;
+  text-align: center;
+}
+
+.seperate{
+  width:50px;
+  height: 1.5px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  display:flex;
+  background-color: #e5b11b;
+  transform-origin: center;
+
+}
+
+.fab{
+  color:'red'
+}
+#statistic{
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#full_content{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+#left_side{
+  height: 100%;
+  width:50%;
+
+}
+#right_side{
+  height: 100%;
+  width:50%;
+  
+}
+#statistic>.stat_component>.stat_content{
+  z-index: 3;
+  font-size: x-large;
+  color: white;
+}
+#statistic>.stat_component>.stats{
+  z-index:3;
+}
+#statistic>.stat_header{
+  z-index:3;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-image: url('https://ultraflow.com.au/sites/default/files/user/news/sources-of-water-pollution.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+#background::after {
+  content:"";
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.stat_header{
+  font-size:300%;
+  color:black;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+.stat_component{
+  width: 100%;
+  height: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 1;
+  margin-right:20px;
+  
+
+}
+.stats{
+  width:200px;
+  height: 180px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.stat_content{
+  display: flex;
+  width:600px;
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right:20px;
+  /* background-color: black; */
+}
+.fas1{
+  color:black;
+  font-size: 100px;
+}
+.number{
+  width:100%;
+  height: 40%;
+  /* background-color: beige; */
+  color:black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.content1{
+  width:100%;
+  height: 60%;
+  /* background-color: black; */
+  color: black;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+}
+
+#content_news{
+  width:100%;
+  height: 1800px;
+  background-color: #f9f7f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.text4{
+  font-size: 30px;
+  color:black;
+  margin-left:30px;
+  border-bottom: 2px #e5b11b solid;
+
+
+}
+
+.content_block{
+  width:70%;
+  height:450px;
+  background-color: blue;
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top:15px;
+
+}
+.content2{
+  width: 40%;
+  height: 100%;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.text3{
+  margin-top:30px;
+  margin-left:30px;
+}
+.text5{
+  margin-left:30px;
+  border:1px #e5b11b solid;
+  border-radius: 20px;
+  font-size: 15px;
+  bottom:-50px;
+  position: relative;
+  color:#e5b11b;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+.text5:hover{
+  border-color: white;
+  background-color: #e5b11b;
+  color:white;
+}
+
+.image2{
+  width:60%;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+
+}
+.image3{
+  width:50%;
+  height: 100%;
+  background-color: purple;
+}
+
+
+.picture_slide{
+  width: 70%;
+  height: 200px;
+  background-color: red;
+}
+.img2{
+  object-fit: cover;
+  width: 70%;
+  height: 30%;
+}
+
+.background3 {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* position: absolute; */
+  /* background-image: url('http://mediad.publicbroadcasting.net/p/michigan/files/styles/x_large/public/201801/8583949219_d565d18edf_o.png');
+  background-repeat: no-repeat;         
+  background-size: cover; */
+  /* z-index: 2; */
+}
+
+.background3::after {
+  /* content:"";
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5) */
+
+}
+.autoplay_header{
+  margin-bottom: 30px;
+  margin-top:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thisyear_content{
+  width: 100%;
+  height:1000px;
+  display:flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(
+    rgba(0,0,0, 0.5), 
+   rgba(22,18,18,0.8)
+  ),
+  url('https://mtview.org/wp-content/uploads/2018/05/beautiful-tree-and-river.jpg');
+  z-index: 3;
+  background-attachment: fixed;
+}
+  
+#thisyear_content_header{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 3;
+
+
+}
+#thisyear_content_header>h2{
+  color: white;
+    font-size: 40px;
+    line-height: 1.3em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.text6{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-align: center;
+  font-size:40px;
+  z-index:3;
+ 
+}
+.contenttext{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contenttext>h5{
+  color:white;
+  z-index: 3;
+
+  
+}
+.seperate1{
+  width:70px;
+  height: 1.5px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  display:flex;
+  background-color: #e5d11b;
+  transform-origin: center;
+
+}
+#process{
+  margin-top:60px;
+  width: 100%;
+  height:400px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.fas2{
+  font-size: 80px;
+  color:white;
+
+}
+#process>div{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  
+}
+.process_block{
+  width: 19%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black ;
+  z-index: 3;
+
+}
+.icon_place{
+  width:7%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block_content{
+  width:100%;
+  height:30%;
+  margin-left:20px;
+  font-size: 18px;
+  font-weight: 700;
+  color:white;
+}
+.block_pic{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width:75%;
+  height: 50%;
+  align-self: center;
+
+}
+.describe_text{
+  margin-left:20px;
+  margin-bottom:30px;
+  color:white;
+}
+#process>h2{
+  align-self: center;
+  margin-bottom:40px;
+  font-size: 40px;
+  color:#ff6600;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 3;
+  
+
+}
+.orange{
+  color:#ff6600
+}
+.autoplay_header>h2{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+
+}

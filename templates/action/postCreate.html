@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include 'metadata.html' %}
+  <title>Cleen</title>
+  <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+  <link rel="stylesheet" href="../../static/postCreate.css">
+
+</head>
+
+<body>
+  <h1>Posting New Articles</h1>
+  <form method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter Title">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Author</label>
+      <input name="author" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter Author">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Picture(link of the picture)</label>
+      <input name="picture_link" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter Picture">
+    </div>
+
+    <!-- Name Content -->
+    <div class="form-group">
+      <label for="exampleInputEmail1">Content</label>
+      <input name="content" type="text" class="form-control form-control_1" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter Content">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Authorize_code (Only users with correct code can post an article)</label>
+      <input name="authorize_code" type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter Code">
+    </div>
+
+    <div id="content_place">
+      <h1>Classic editor</h1>
+
+      <!-- Name Content -->
+        <textarea name="content_editor"  id="editor">
+          &lt;p&gt;This is some sample content.&lt;/p&gt;
+        </textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#editor'),{ 
+        ckfinder: {
+            uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+            options: {
+              resourceType: 'Images'
+            }
+          }
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

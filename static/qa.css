@@ -1,0 +1,29 @@
+#left>div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom:100px;
+}
+#left>div>a{
+  color:black;
+  text-decoration: none;
+  font-size:20px;
+  font-family: Arial,Helvetica,sans-serif;
+  margin-bottom:60px;
+
+
+}
+#question{
+  font-weight: bold;
+  font-size: 40px;
+
+}
+#left>span{
+  margin-bottom: 100px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Arial,Helvetica,sans-serif;
+
+}

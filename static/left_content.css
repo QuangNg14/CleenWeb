@@ -1,0 +1,275 @@
+#content_news1{
+  width: 100%;
+  height: 400px;
+  padding:20px;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+#content_news2{
+  width: 100%;
+  height: 400px;
+  padding:20px;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+#content_news3{
+  width: 100%;
+  height: 400px;
+  padding:20px;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+#big_khung_news{
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  height: 70%;
+}
+.khung_news{
+  position: relative;
+  width:45%;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0,0,0,.15);
+  margin-top:25px;
+  margin-right:35px;
+}
+
+.khung_news { 
+  transition: all .2s;
+  transition-timing-function: ease-out;
+}
+.khung_news:hover {
+  transform: scale(1.03);
+  transition-timing-function: ease-in;
+}
+.pic_news_content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 3px 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom-right-radius: 6px;
+  color:#e98a15;
+  font-size:10px;
+}
+
+.pic_news {
+  width: 100%;
+  height: 64%;
+}
+.cover_img{
+  width:100%;
+}
+.content_news{
+  width: 100%;
+  height: 20%;
+  flex-grow: 0;
+  font-size: 1.3em;
+  display: flex;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.source{
+  width:100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  border-top:1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+
+}
+.khung_news_text{
+  margin-left:20px;
+}
+.author_picture{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post_info{
+  width: 85%;
+  height: 100%;
+}
+.post_author{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.post_date{
+  width: 100%;
+  height: 50%;
+}
+.author_picture_pic{
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  width: 25px;
+  height: 25px;
+  top:0px;
+  right:-10px;
+}
+#content2{
+  width: 100%;
+  height: 800px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+#left_content2{
+  width: 45%;
+  height: 600px;
+ 
+}
+#right_content2{
+  width: 45%;
+  height: 600px;
+
+}
+.big_content_img{
+  width: 100%;
+  height: 54%;
+  background-color: yellow;
+}
+.big_content_content{
+  width: 100%;
+  height: 22%;
+
+}
+
+.big_content_header{
+  position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.content_author{
+  font-size: 10px;
+
+  margin-bottom:10px;
+  color: #666666;
+}
+.content_short{
+  color:#666666;
+  font-size:20px;
+}
+
+.small_conten1 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  background-color: red;
+}
+
+.small_conten2 {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  background-color: red;
+}
+
+.leftSmall {
+  width: 30%;
+  height: 100%;
+  background-color: mediumaquamarine;
+}
+
+.rightSmall {
+  width: 70%;
+  height: 100%;
+  background-color: purple;
+}
+
+#upsmall1{
+  width: 100%;
+  height:50%;
+  color:red;
+}
+#upsmall2{
+  width: 100%;
+  height:50%;
+  color:rgb(51, 92, 153);
+}
+
+#downsmall1{
+  width: 100%;
+  height:50%;
+  color:rgb(144, 51, 153);
+}
+
+#downsmall2{
+  width: 100%;
+  height:50%;
+  color:rgb(72, 255, 0);
+}
+
+
+
+
+.small_content{
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+  background-color: yellow;
+}
+.small_content1{
+  width:100%;
+  height: 
+}
+
+#owl_nav{
+  width:100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: -350px;
+
+}
+.point_arrow{
+  position: relative;
+  left:100px;
+  top:60px;
+  display: inline-block;
+  line-height: 36px;
+  height: 40px;
+  font-size: 14px;
+  text-transform: capitalize;
+  min-width: 40px;
+  background: none;
+  color: #999999;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #d1d1d1;
+  margin-right:10px;
+  
+  
+}
+.a1{
+  background-color: #e5b11b;
+  color:white;
+}
+
+.point_arrow:hover{
+  color:white;
+  background-color: #FB005F;
+}
+
+.content_place{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}

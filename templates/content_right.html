@@ -1,0 +1,76 @@
+<div id="right">
+  <div id="top_right">
+    <div id="row1">
+      <div class="container">
+        <span class="btn3">Follow us</span>
+      </div>
+      <div class="empty"></div>
+    </div>
+
+
+    <div id="row2">
+      <div class="middle">
+        <a class="btn_a" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn_a" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn_a" href="#">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="btn_a" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn_a" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div id="row4">
+      <div><span class="text_style"><a href="{{url_for('question')}}"> Do you have any questions for us?</a></span></div>
+  
+    </div>
+  </div>
+
+  <div class="post_news text_style">
+    <div id="post_click"><a href="{{url_for('add')}}">POST SOMETHING</a></div>
+    <img class="img"
+      src="https://i0.wp.com/www.eyehealthnepal.com/wp-content/uploads/2019/01/submit-your-article-eye-health-nepal.jpg?resize=800%2C500&ssl=1"
+      alt="">
+  </div>
+
+  <div id="ads">
+    <img class="img" src="https://themerex.net/wp-content/uploads/edd/2018/04/greenrescues-2.png" alt="">
+  </div>
+
+  <div id="list_news">
+    <div id="top_list">
+      <div class="tab1 popular text_style"><span>Popular</span></div>
+      <div class="tab1 text_style"><span>Recent</span></div>
+      <div class="tab1 text_style"><span>Comment</span></div>
+    </div>
+
+    <div id="list_content">
+      {% for new in data %}
+      <div class="list_items">
+        <div id="list_items_left">
+          <img class="img" src="{{new.picture_link}}" alt="">
+        </div>
+        <a href="{{url_for('new', idNew = new.id)}}">
+          <div id="list_items_right">
+            {{new.title}}
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+
+
+
+  </div>
+</div>

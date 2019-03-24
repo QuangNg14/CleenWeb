@@ -1,0 +1,190 @@
+
+#row1{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+}
+.container{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  background-color: #e5b11b;
+  justify-content: center;
+  align-items: center;
+
+}
+.empty{
+  width: 900px;
+  height: 100%;
+  background-color: #e6e6e6;
+
+}
+.btn3{
+  color:white;
+  font-size: 20;
+  
+}
+#row2{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social_button{
+  width: 50px;
+  padding:10px;
+  height: 70px;
+  background-color: blueviolet;
+}
+#top_right{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#row3{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e5b11b;
+  align-items: center;
+  color:white;
+}
+
+
+#row4{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #e5b11b;
+  align-items: center;
+  border:0.5px solid #e5b11b;
+  margin-bottom:25px;
+  color:white;
+
+
+}
+
+.btn2{
+  background-color: red;
+}
+#ads{
+  width: 100%;
+  height: 450px;
+  margin-top:50px;
+  position:relative;
+}
+.textbox{
+  position: absolute;
+  bottom:60px;
+  right:120px;
+  background-color: black;
+  padding:4px;
+  color:white;
+  justify-content: center;
+  align-items: center;
+
+}
+.textbox:hover{
+  background-color: #e5b11b;
+}
+.post-news{
+  width: 100%;
+  height: 450px;
+}
+#post_click{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e5b11b;
+  border: 1px white solid;
+  align-items: center;
+  color:white;
+}
+#post_click>a{
+  color:white;
+  text-decoration: none;
+}
+
+.img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#top_list{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid #e6e6e6;
+}
+#row4>div>.text_style>a{
+  text-decoration: none;
+  color:white;
+}
+.tab1{
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777777;
+  /* chinh lai color thanh grey */
+  border-right:1px solid #e6e6e6;
+}
+.tab1:hover{
+  background-color: #e5b11b;
+  color:white;
+
+}
+.popular{
+  background-color: #e5b11b;
+  color:white;
+}
+#list_content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.list_items{
+  width: 100%;
+  height: 100px;
+  margin-top:20px;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1px solid #bfbfbf;
+}
+#list_items_left{
+  width: 30%;
+  height: 80%;
+}
+.list_items>a{
+  display: block;
+  width:70%;
+
+
+}
+#list_items_right{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.hot_text{
+  margin-left:20px;
+}
+
+

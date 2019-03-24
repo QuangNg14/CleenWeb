@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cleen</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../static/homepage.css">
+  <link rel="stylesheet" href="../../static/darkcode.css">
+  <link rel="stylesheet" href="../../static/header.css">
+  <link rel="stylesheet" href="../../static/nav.css">
+  <link rel="stylesheet" href="../../static/first_tab.css">
+  <link rel="stylesheet" href="../../static/left_content.css">
+  <link rel="stylesheet" href="../../static/right_content.css">
+  <link rel="stylesheet" href="../../static/carousel.css">
+  <link rel="stylesheet" href="../../static/footer.css">
+  <link rel="stylesheet" href="../../static/cleen_home.css">
+  <link rel="stylesheet" href="../../static/autoplay.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../../static/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../../static/slick/slick-theme.css" />
+
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  {% include 'metadata.html' %}
+
+
+</head>
+
+<body>
+  <div id="header">
+    <div id="header_left">
+      <span class="text_style">Welcome to Cleen Website</span>
+    </div>
+    <div id="header_right">
+      <span class="text_style_1">Current Status</span>
+      <a class="login text_style " href="{{url_for('home')}}"> Cleen News</a>
+      <a class="login text_style left" href="{{url_for('cleenproject')}}"> Cleen Project</a>
+  
+    </div>
+  </div>
+
+
+  <div id="banner">
+    <span class="text_style">CLEEN PROJECT</span>
+  </div>
+
+  <div id="navbar">
+    <div id="nav_left">
+
+      <div class="nav-item text_style active12"><a id="home">Home</a></div>
+      <div class="nav-item text_style"><a href="#about_cleen">About us</a></div>
+      <div class="nav-item text_style"><a href="#project">Projects</a></div>
+      <div class="nav-item text_style"><a href="{{url_for('home')}}">News</a></div>
+      <div class="nav-item text_style"><a href="#foot">Contact</a></div>
+      <div class="nav-item text_style"><a href="#foot">More</a></div>
+      <div class="nav-item text_style"><a href="{{url_for('createQuestion')}}">Question</a></div>
+
+
+    </div>
+    <div id="nav_right">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="main_picture">
+    <div class="pic_content">
+      <img src="https://bluedelaware.com/wp-content/uploads/2018/03/clean.water_.jpg" alt="" class="img">
+      <div class="small_content_cleen">Who Are We</div>
+    </div>
+    <div class="pic_content">
+      <img src="https://thecleansceneblog.files.wordpress.com/2014/01/clean-is-green.jpg" alt="" class="img">
+      <div class="small_content_cleen">What We Do</div>
+    </div>
+    <div class="pic_content">
+      <img
+        src="https://marketplace.canva.com/MACQq5Rt4os/1/thumbnail_large/canva-diverse-people-fists-together--MACQq5Rt4os.jpg"
+        alt="" class="img">
+      <div class="small_content_cleen">Collaboration</div>
+    </div>
+  </div>
+  <div class="about_cleen animated">
+    <video autoplay muted loop id="myVideo">
+      <source src="../../static/environment.mp4" type="video/mp4">
+    </video>
+    <div class="all_text">
+      <div>
+        <h2><a id="about_cleen">About Cleen Project</a></h2>
+      </div>
+      <hr class="seperate">
+      </hr>
+      <div id="small_textbox">
+        <h5 class="text1">With the help of Summit Organization The Cleen Project was founded to bring clean stoves to
+          rural villages.
+          The project was founded by Nguyen Lan Chi and vice-president Nguyen Nhat Quang(Both are students of Hanoi
+          Amsterdam High School)
+          The aim of our project is to bring clean stoves to poor villages to replace the smoky and hazard ones and
+          restore the enviroment of these places. </h5>
+
+      </div>
+      <h6 class="text2">Read More</h6>
+    </div>
+  </div>
+
+  <div id="statistic">
+    <div class="stat_header">
+      How serious is water pollution?
+    </div>
+    <div id="full_content">
+      <div id="left_side">
+        <div class="stat_component">
+          <div class="stats">
+            <i class="fas fa-skull-crossbones fas1"></i>
+          </div>
+          <div class="stat_content">
+            <div class="number">9000</div>
+            <div class="content1">People die due to poor water and sanitation</div>
+          </div>
+        </div>
+
+        <div class="stat_component">
+          <div class="stats">
+            <i class="fas fa-radiation fas1"></i>
+          </div>
+          <div class="stat_content">
+            <div class="number">20000</div>
+            <div class="content1">New cancer patients are found due to water pollutions</div>
+          </div>
+        </div>
+
+        <div class="stat_component">
+          <div class="stats">
+            <i class="fas fa-arrow-down fas1"></i>
+          </div>
+          <div class="stat_content">
+            <div class="number">27%</div>
+            <div class="content1">of children under 5 years old are malnourished in Vietnam due to lack of clean water
+              and
+              poor sanitation </div>
+          </div>
+        </div>
+
+        <div class="stat_component">
+          <div class="stats">
+            <i class="fas fa-tint fas1"></i>
+          </div>
+          <div class="stat_content">
+            <div class="number">21%</div>
+            <div class="content1">Population is using arsenic-contaminated water</div>
+          </div>
+        </div>
+
+        <div class="stat_component">
+          <div class="stats">
+            <i class="fas fa-trash-alt fas1"></i>
+          </div>
+          <div class="stat_content">
+            <div class="number">19,000</div>
+            <div class="content1"> tons of plastic waste are discharged to the environment every day, of which each of
+              us
+              contributes 1.2 kg of garbage / day on average</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="right_side">
+        <img src="https://static.vix.com/es/sites/default/files/o/oceano_basura.jpg" class="img" alt="">
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div id="content_news">
+    <div class="content_block">
+
+      <div class="image2">
+        <img src="https://bit.ly/2Tt5UOC" class="img" alt="">
+      </div>
+      <div class="content2">
+        <div class="block_header">
+          <span class="text4">Fund Raising</span>
+        </div>
+        <span class="text3"> We are selling clean tote bags in the Walking in order to raise funds for the main event
+          Many people both vietnamese and foreigners are interested in our product.
+        </span>
+        <div class="readmore">
+          <span class="text5">Read More</span>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="content_block">
+      <div class="content2">
+        <div class="block_header">
+          <span class="text4">Fund Raising</span>
+        </div>
+        <span class="text3">These are the 2 clean tote bags samples that we sold to raise funds. We sold a total of 200
+          bags and received 26
+          million vnd
+          We had shippers all around the country and we also had a fund-raising event in Walking Street</span>
+        <div class="readmore">
+          <span class="text5">Read More</span>
+        </div>
+      </div>
+      <div class="image2">
+        <div class="image3">
+          <img src="https://bit.ly/2UrTgMl" class="img" alt="">
+        </div>
+        <div class="image3">
+          <img src="https://bit.ly/2TEqcUK" class="img" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content_block">
+      <div class="image2">
+        <img src="https://bit.ly/2XOGSIj" class="img" alt="">
+      </div>
+      <div class="content2">
+        <div class="block_header">
+          <span class="text4">Main Event</span>
+        </div>
+        <span class="text3">The Cleen Members delivered all 50 stoves that were purchased using 26 million Vietnam
+          dong by selling tote bags to the poor village in Phu Ly Ha Nam.
+          We also had a presentation about the danger of air pollution and a demonstration of how to use the stoves
+
+        </span>
+        <div class="readmore">
+          <span class="text5">Read More</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="content_block">
+
+      <div class="content2">
+        <div class="block_header">
+          <span class="text4">Main Event</span>
+        </div>
+        <span class="text3">The Cleen members are carrying all of the stoves to every residence.
+          The environment here is heavily damaged and we felt that we needed to do something
+
+        </span>
+        <div class="readmore">
+          <span class="text5">Read More</span>
+        </div>
+      </div>
+      <div class="image2">
+        <img src="https://bit.ly/2tZk6Qh" class="img" alt="">
+      </div>
+    </div>
+
+
+    <div class="content_block">
+      <div class="image2">
+        <img src="https://bit.ly/2EMcfdZ" class="img" alt="">
+      </div>
+      <div class="content2">
+        <div class="block_header">
+          <span class="text4">Main Event</span>
+        </div>
+        <span class="text3">We are explaining how to use the stove to local residents.
+          We also help install the stoves to suit each house
+        </span>
+        <div class="readmore">
+          <span class="text5">Read More</span>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <div id="thisyear_content">
+    <div class="background3"></div>
+    <div id="thisyear_content_header">
+      <h2><a id="project">2019 hightlights</a></h2>
+    </div>
+    <hr class="seperate1">
+    </hr>
+    <span class="text6"><span class="orange">Minimize</span> plastic bag and <span class="orange">Against</span> Water Pollution </span>
+
+    <div class="contenttext">
+      <h5 class="text1">
+        Water Pollution, a contamination of bodies of water including lakes, rivers and oceans,
+        has been the main causes of health related diseases in many countryside areas
+        This year, thanks to the huge success of the project last year, we are going back to Phu Ly Ha Nam to help
+        improve the water conditions and also spread our project to nearby villages
+        We have received more support from the vllagers and we also partner with several institution and initiative to
+        better our project.
+        Our main goal is to drastically recover the heavily polluted environment in my countryside and expand our
+        projects to more villages
+        Stay tune for more upcoming events of our project!
+      </h5>
+    </div>
+    <i class="far fa-long-arrow-right"></i>
+
+    <div id="process">
+      <h2>Main Stages</h2>
+      <div>
+        <div class="process_block">
+          <div class="block_pic">
+            <img src="http://cdns2.freepik.com/fotos-gratis/_318-41656.jpg" class='img small_icon' alt="">
+          </div>
+          <div class="block_content">1.Selling Clean Bags to raise fund</div>
+          <div class="describe_text">Sell environmental friendly and stylish tote bags to raise money</div>
+        </div>
+
+        <div class="icon_place">
+          <i class="fas fa-long-arrow-alt-right fas2"></i>
+        </div>
+
+
+        <div class="process_block">
+          <div class="block_pic">
+            <img
+              src="data:image/png;base64,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"
+              class="img" alt="">
+          </div>
+          <div class="block_content">2.Purchase Water Filter</div>
+          <div class="describe_text">Buy quality clean filters with reasonable prices</div>
+
+        </div>
+        <div class="icon_place">
+          <i class="fas fa-long-arrow-alt-right fas2"></i>
+        </div>
+
+
+        <div class="process_block">
+          <div class="block_pic">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQAzst6XGj4BAqkW-6_dQldG4I2jGy6bCgEoOOE--0FptF2TJu"
+              class="img" alt="">
+          </div>
+          <div class="block_content">3.Tranport and Install for Villagers</div>
+          <div class="describe_text">Carry the filters to the villages and install them for the villagers</div>
+
+        </div>
+        <div class="icon_place">
+          <i class="fas fa-long-arrow-alt-right fas2"></i>
+        </div>
+
+
+        <div class="process_block">
+          <div class="block_pic">
+            <img src="https://t3.ftcdn.net/jpg/01/25/56/50/500_F_125565058_w3K0UFC70OHbbAyxMuzAtp8ARHmtvyWi.jpg"
+              class="img" alt="">
+           
+             </div>
+
+          <div class="block_content">4.Spread to other villages</div>
+          <div class="describe_text">Expand our project and help other villages as well</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="autoplay_header">
+    <h2>PHOTO GALLERY</h2>
+  </div>
+  <div class="autoplay">
+    <div class="slick_pic"><img src="https://bit.ly/2ERfVer" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2NUJZKn" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2Uvm1YG" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2F3JcnL" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2TEEIvD" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2VUxilH" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2F1zsKG" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2Tt5UOC" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2u0RTsx" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2Uvmg62" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2ERR8qA" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2CaXFfC" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2VPKrMu" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2SXEUlb" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2TI1zqf" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2EOUM4D" class="img" alt=""></div>
+    <div class="slick_pic"><img src="https://bit.ly/2XPsmjJ" class="img" alt=""></div>
+
+  </div>
+
+
+
+  <!-- icon o font awesome -->
+  <a id="foot">
+    {% include 'footer.html' %}</a>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="../../static/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../../static/javascript/abc.js"></script>
+
+
+</body>
+
+</html>

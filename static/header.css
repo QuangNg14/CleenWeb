@@ -1,0 +1,54 @@
+#header {
+  width: 100%;
+  background-color: black;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+}
+#header_left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+#header_right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right:30px;
+}
+.login{
+  height: 100%;
+  width: 20%; 
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  position: relative;
+  padding: 0px 15px;
+  border-left: 0.5px solid #e5b11b;
+  border-right: 0.5px solid #e5b11b;
+
+}
+
+.text_style_1{
+  color:white;
+  display: flex;
+  align-self:center; 
+  margin-right: 20px;
+}
+.left{
+  background-color: #e5b11b; 
+}
+#header_right>a:link{
+  color:white;
+}
+#header_right>a:hover{
+  color:white;
+  text-decoration-line: none;
+}

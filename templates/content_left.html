@@ -1,0 +1,70 @@
+<div id="left">
+  <div id="first_tab">
+    <div id="pull_left">
+      <span class="text_style">Environment</span>
+    </div>
+    <div id="pull_right">
+      <div class="top_small all text_style">All</div>
+      <div class="top_small text_style">Spotlight</div>
+      <div class="top_small text_style">Animal</div>
+      <div class="top_small text_style">Ocean</div>
+      <div class="top_small text_style">Forest</div>
+      <div class="top_small text_style">Technology</div>
+    </div>
+  </div>
+  <div id="big_khung_news">
+    {% for new in data %}
+    <a href="{{url_for('new', idNew = new.id)}}">
+      <div class="khung_news text_style">
+        <div class="pic_news">
+          <div class="pic_news_content">
+            <h7>{{new.picture_type}}</h7>
+          </div>
+          <a href="{{url_for('new', idNew = new.id)}}">
+            <div class="cover_img">
+              <img class="img" src="{{new.picture_link}}">
+            </div>
+          </a>
+        </div>
+
+        <div class="content_news">
+          <span class="khung_news_text">{{new.title}}</span>
+        </div>
+
+        <div class="source">
+          <div class="author_picture">
+            <div class="author_picture_pic">
+              <img class="img" src="{{new.author_pic}}" alt="">
+            </div>
+          </div>
+          <div class="post_info">
+            <div class="post_author">
+              {{new.author}}
+            </div>
+            <div class="post_date">
+              {{new.date}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+
+
+  </div>
+  <div id="owl_nav">
+    <div class="point_arrow">
+      <i class="fas fa-arrow-left"></i>
+    </div>
+    {% for page in range(0, paginationLength) %}
+    <a href="{{url_for('home_page', number = page + 1)}}">
+      <div class="number_point_arrow point_arrow">{{page + 1}}</div>
+    </a>
+    {% endfor %}
+    <div class="point_arrow">
+      <i class="fas fa-arrow-right"></i>
+    </div>
+
+
+  </div>
+</div>

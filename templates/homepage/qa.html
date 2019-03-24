@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cleen</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../static/homepage.css">
+  <link rel="stylesheet" href="../../static/darkcode.css">
+  <link rel="stylesheet" href="../../static/header.css">
+  <link rel="stylesheet" href="../../static/nav.css">
+  <link rel="stylesheet" href="../../static/first_tab.css">
+  <link rel="stylesheet" href="../../static/left_content.css">
+  <link rel="stylesheet" href="../../static/right_content.css">
+  <link rel="stylesheet" href="../../static/carousel.css">
+  <link rel="stylesheet" href="../../static/footer.css">
+  <link rel="stylesheet" href="../../static/qa.css">
+  <link rel="stylesheet" href="../../static/cleen_home.css">
+
+
+
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  {% include 'metadata.html' %}
+
+</head>
+
+<body>
+  {% include 'header.html' %}
+
+  <div id="banner">
+    <span class="text_style">QUESTONS AND ANSWERS</span>
+  </div>
+
+  {% include 'navbar.html' %}
+  
+  <div id="content">
+    <div id="left">
+      
+      <span> Frequently Asked Questions</span>
+      <div>
+      {% for ques in data %}
+ 
+      <a  href="{{url_for('answer', questionId = ques.id)}}">
+       <span id="question"> {{loop.index}}. {{ques.question}}</span>
+       <br>
+       {% if ques.answer == None %}
+          <span>Question not have answer!!!</span>
+       {% else %}
+          <span>{{ques.answer}}</span>
+        {% endif %}
+      </a>
+      
+  
+      {% endfor %}
+      </div>
+    </div>
+
+
+      {% include 'content_right.html' %}
+    </div>
+    {% include 'footer.html' %}
+  </body>
+
+</html>

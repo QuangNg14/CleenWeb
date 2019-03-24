@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cleen</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../static/homepage.css">
+  <link rel="stylesheet" href="../../static/darkcode.css">
+  <link rel="stylesheet" href="../../static/header.css">
+  <link rel="stylesheet" href="../../static/nav.css">
+  <link rel="stylesheet" href="../../static/first_tab.css">
+  <link rel="stylesheet" href="../../static/left_content.css">
+  <link rel="stylesheet" href="../../static/right_content.css">
+  <link rel="stylesheet" href="../../static/carousel.css">
+  <link rel="stylesheet" href="../../static/footer.css">
+  <link rel="stylesheet" href="../../static/each_new.css">
+  <link rel="stylesheet" href="../../static/cleen_home.css">
+
+
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  {% include 'metadata.html' %}
+
+
+</head>
+
+<body>
+
+  {% include 'header.html' %}
+
+
+
+
+  <div id="banner">
+    <span class="text_style">CLEEN NEWS</span>
+  </div>
+
+  {% include 'navbar.html' %}
+
+  {% include 'carousel.html' %}
+
+
+  <div id="content">
+    <div id="left">
+      <div id="first_tab">
+        <div id="pull_left">
+          <span class="text_style">Environment</span>
+        </div>
+        <div id="pull_right">
+          <div class="top_small all text_style">All</div>
+          <div class="top_small text_style">Spotlight</div>
+          <div class="top_small text_style">Animal</div>
+          <div class="top_small text_style">Ocean</div>
+          <div class="top_small text_style">Forest</div>
+          <div class="top_small text_style">Technology</div>
+
+        </div>
+      </div>
+
+      <div id="page_content">
+        <div id="main_header">
+          <div id="Title_post">{{new.Title_post}}</div>
+          <div id="author">
+            <img src="{{new.author_pic_small}}" class="author_pic_small" alt="">
+            <div><a href={{new.author_link}}>{{new.author_name}}</a></div>
+          </div>
+        </div>
+        {{new.Content|safe}}
+      </div>
+
+    </div>
+    <div id="right">
+      <div id="top_right">
+        <div id="row1">
+          <div class="container">
+            <span class="btn3">Follow us</span>
+          </div>
+          <div class="empty"></div>
+        </div>
+
+
+        <div id="row2">
+          <div class="middle">
+            <a class="btn_a" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn_a" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn_a" href="#">
+              <i class="fab fa-google"></i>
+            </a>
+            <a class="btn_a" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn_a" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div id="row4">
+          <div><span class="text_style">Do you have any questions for us?</span></div>
+
+        </div>
+      </div>
+
+      <div class="post_news text_style">
+        <div id="post_click"><a href="{{url_for('add')}}">POST SOMETHING</a></div>
+        <img class="img"
+          src="https://i0.wp.com/www.eyehealthnepal.com/wp-content/uploads/2019/01/submit-your-article-eye-health-nepal.jpg?resize=800%2C500&ssl=1"
+          alt="">
+      </div>
+
+      <div id="ads">
+        <img class="img" src="https://themerex.net/wp-content/uploads/edd/2018/04/greenrescues-2.png" alt="">
+      </div>
+
+      <div id="list_news">
+        <div id="top_list">
+          <div class="tab1 popular text_style"><span>Popular</span></div>
+          <div class="tab1 text_style"><span>Recent</span></div>
+          <div class="tab1 text_style"><span>Comment</span></div>
+        </div>
+
+        <div id="list_content">
+          {% for new in data %}
+          <div class="list_items">
+            <div id="list_items_left">
+              <img class="img" src="{{new.picture_link}}" alt="">
+            </div>
+            <a href="{{url_for('new', idNew = new.id)}}">
+              <div id="list_items_right">
+                {{new.title}}
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  {% include 'footer.html' %}
+
+  <script src="../../static/javascript/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

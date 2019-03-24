@@ -1,0 +1,46 @@
+#pull_left{
+  height: 100%;
+  width: 25%;
+  background-color: #e5b11b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+
+}
+#pull_right{
+  height: 100%;
+  width:75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #e6e6e6;
+}
+
+#first_tab{
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+}
+
+.top_small{
+  width: 13%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right:1px solid #d9d9d9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+
+}
+.all{
+  color :#e5b11b;
+}
+.top_small:hover{
+  background-color: #e5b11b;
+  color:white
+}
