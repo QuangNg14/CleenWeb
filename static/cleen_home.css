@@ -1,3 +1,97 @@
+#main_screen{
+  width: 100%;
+  height: 650px;
+  background-color: red;
+}
+#main_pic{
+  width:100%;
+  height: 65%;
+  background-color: yellow;
+  position: relative;
+}
+#top_nav{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+#left_nav{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  color: white;
+  letter-spacing: 0.25em;
+  font-size: 35px;
+  font-weight: 750;
+  font-family: 'Oswald', sans-serif;
+
+}
+#right_nav{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.function{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(179, 179, 179);
+  font-size: 18px;
+}
+#end_nav{
+  width: 15%;
+  height: 100%;
+  
+}
+#login12{
+  position: absolute;
+  color:rgb(179, 179, 179);
+  padding: 3px 10px 3px 10px;
+  border: 2px rgb(52,91,172) solid;
+  margin-top:16px;
+  margin-left:20px;
+  font-size: 18px;
+}
+#text{
+  top: 60px;
+  left: 750px;
+  position: absolute;
+  text-align: end;
+  padding: 20px 50px 20px 50px;
+  color:white;
+}
+#text>span{
+  font-size: 35px;
+  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  letter-spacing: 0.35em;
+
+}
+
+#bottom_nav{
+  width: 100%;
+  height: 25%;
+  background-color: rgb(52,91,172);
+  display: flex;
+  align-items: center;
+}
+#bottom_nav>span{
+  color:white;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
+  margin-left:70px;
+  letter-spacing: 0.25em;
+}
+
+
+
 
 #main_picture{
   width: 100%;
