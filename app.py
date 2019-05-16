@@ -183,6 +183,12 @@ def answer(questionId):
                 else: 
                         return redirect(url_for("answer", questionId = questionId))
 
+@app.route('/donation',methods=["GET","POST"])
+def donation():
+        if request.method == "GET":
+                questionGet = FAQ.objects()
+                return render_template('homepage/donation.html', data = questionGet)
+
 # Thằng hỏi:
 #         HTML có form Đặt câu hỏi và nút submit
 
@@ -225,8 +231,17 @@ def deleteUser(userId): #userId tu mlab
     userGet.delete()  #xoa dong vua bam 
     return redirect(url_for("pending"))
 
-      
-
+@app.route('/email', methods = ["GET","POST"])
+def email():
+        if request.method == "GET":
+                questionGet = FAQ.objects()
+                return render_template("homepage/cleenproject_home.html", data = questionGet)
+        elif request.method == "POST":
+                form = request.form
+                email = form["email"]
+                newemail = Email(email = email)
+                newemail.save()
+                return redirect(url_for('cleenproject'))
 
 if __name__ == '__main__':
   app.run(port=8000, debug=True)

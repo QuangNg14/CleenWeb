@@ -37,33 +37,34 @@
   </div>
 
   {% include 'navbar.html' %}
-  
+
   <div id="content">
     <div id="left">
-      
-      <span> Frequently Asked Questions</span>
+      <div id="top_layout">
+        <span id="headline"> Frequently Asked Questions</span>
+      </div>
       <div>
-      {% for ques in data %}
- 
-      <a  href="{{url_for('answer', questionId = ques.id)}}">
-       <span id="question"> {{loop.index}}. {{ques.question}}</span>
-       <br>
-       {% if ques.answer == None %}
+        {% for ques in data %}
+
+        <a href="{{url_for('answer', questionId = ques.id)}}">
+          <span id="question"> {{loop.index}}. {{ques.question}}</span>
+          <br>
+          {% if ques.answer == None %}
           <span>Question not have answer!!!</span>
-       {% else %}
-          <span>{{ques.answer}}</span>
-        {% endif %}
-      </a>
-      
-  
-      {% endfor %}
+          {% else %}
+          <span id="ques_answer">{{ques.answer}}</span>
+          {% endif %}
+        </a>
+
+
+        {% endfor %}
       </div>
     </div>
 
 
-      {% include 'content_right.html' %}
-    </div>
-    {% include 'footer.html' %}
-  </body>
+    {% include 'content_right.html' %}
+  </div>
+  {% include 'footer.html' %}
+</body>
 
 </html>

@@ -37,15 +37,7 @@
 
 <body>
   <div id="header">
-    <div id="header_left">
-      <span class="text_style">Welcome to Cleen Website</span>
-    </div>
-    <div id="header_right">
-      <span class="text_style_1">Switch to Another Page</span>
-      <a class="login text_style " href="{{url_for('home')}}"> Cleen News</a>
-      <a class="login text_style left" href="{{url_for('cleenproject')}}"> Cleen Project</a>
-  
-    </div>
+    {% include 'header.html' %}
   </div>
 
 
@@ -93,6 +85,7 @@
       <div class="nav-item text_style"><a href="#foot">Contact</a></div>
       <div class="nav-item text_style"><a href="#foot">More</a></div>
       <div class="nav-item text_style"><a href="{{url_for('createQuestion')}}">Question</a></div>
+      <div class="nav-item text_style"><a href="{{url_for('donation')}}">Donation</a></div>
 
 
     </div>

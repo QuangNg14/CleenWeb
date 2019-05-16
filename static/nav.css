@@ -1,12 +1,12 @@
 #nav_left{
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: row;
   padding-left:80px;
 }
 #nav_right{
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
